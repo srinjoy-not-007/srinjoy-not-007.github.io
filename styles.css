@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 999;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6a48bb;
+}
+
+/* Intro Section styles */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right;
+    padding: 200px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+    padding-top: 200px;
+    font-size: 20px;
+    text-align:left;
+}
+
+.intro-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-right {
+    flex-grow: 1;
+    padding-left: 100px;
+    color: white;
+    align-items:end;
+}
+
+.intro-right h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: #333;
+    text-shadow:1px 1px 1px #333;
+    
+    
+}
+
+.intro-right h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-shadow:1px 1px 1px #333;
+    color: #333;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff5722;
+}
+
+/* Book Section styles */
+.book-section {
+    padding: 100px;
+    background-color: #f9f1ad;
+    color: #333;
+}
+
+.book-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -75px;
+    text-align: center;
+    text-shadow:0.5px 0.5px #333;
+}
+
+.book-section h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    
+}
+
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    position: relative;
+}
+
+.book-image img {
+    width: 100%;
+    height:450px;
+}
+
+.book-category {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.book-details {
+    padding: 20px;
+}
+
+.book-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px}
+
+.book-details p {
+    margin-bottom: 10px;
+}
+
+.book-price {
+    font-weight: bold;
+}
+
+.add-btn {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+.add-btn.added {
+    background-color: #4caf50;
+}
+
+/* Recommendations Section styles */
+
+ .styled-hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 5px auto;
+    max-width: 0px;
+} 
+
+
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar .search-btn {
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #ff5722;
+}
+
+/* Reviews Section styles */
+.reviews-section {
+    padding: 100px;
+}
+
+.reviews {
+    display: flex;
+    gap: 20px;
+}
+
+.review-card {
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.review-card .review-details {
+    padding: 20px;
+}
+
+.review-card .review-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-card .review-details p {
+    margin-bottom: 10px;
+}
+
+.review-form {
+    margin-top: 30px;
+}
+
+.review-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.review-form form input,
+.review-form form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form form textarea {
+    resize: vertical;
+}
+
+.review-form form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form form button[type="submit"]:hover {
+    background-color: #ff5722;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links a,
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-to-top a:hover {
+    color: #ff9800;
+}
