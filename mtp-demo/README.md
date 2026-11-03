@@ -1,7 +1,5 @@
-# Static fleet diagnosis demonstration
+# Fleet diagnosis application
 
-Open index.html through an HTTP server. The replay uses the retained 200-robot UU/GG traces without recomputing simulation. A 750-robot summary is included, but its large traces are not in this public package.
+Open index.html on the hosted site. assess/ runs the existing planner with browser Python WebAssembly, custom maps, manual fleet counts, diagnostics and exports. replay/ plays the unchanged retained 200-robot demonstration. The 750-robot retained demonstration is summary-only in this compact package; new exploratory runs can use a manual 750-robot request subject to the wall limit.
 
-For a local preview: python -m http.server 8767
-
-The Python live assessment is separate and is supplied in the private advisor archive. No paper, thesis draft, private repository link or advisor Drive link is published here. Existing PIBT/GGO methods and map provenance are credited on the landing page.
+See assess/README.md for runtime adaptations and validation. The full native Python server and multi-case sweeps remain in the separate project source package. Existing methods and published map/field provenance are credited on the main page.
