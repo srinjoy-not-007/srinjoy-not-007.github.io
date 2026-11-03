@@ -1,0 +1,4 @@
+condition,seed,n_agents,throughput_UU,throughput_GG,throughput_relative_change,tasks_delta,wait_actions_delta,backward_actions_delta,root_backward_UU,root_backward_GG,inherited_backward_UU,inherited_backward_GG,failed_child_returns_delta
+kiva_low,2026102701,200,3.0925,3.4275,0.10832659660468891,134,-3642,10,0,1549,13272,11733,469
+kiva_high,2026102701,750,3.8675,5.05,0.3057530704589526,473,-8712,-1089,0,3706,88946,84151,2630
+
